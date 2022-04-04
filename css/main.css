@@ -21,6 +21,7 @@ img {
 
 .nav-container {
   background: #0199ef;
+  height: 15vh;
 }
 
 .nav-container a {
@@ -43,15 +44,11 @@ header .logo {
 }
 
 header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
-header ul a {
-  color: black;
-  display: block;
-  padding: 0 1em;
+.hamburger {
+  display: none;
 }
 
 .social-header,
@@ -189,6 +186,58 @@ section {
     display: grid;
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80% auto;
+        grid-template-columns: 80% auto;
+    background: #0199ef;
+  }
+  .nav-container a {
+    color: black;
+  }
+  .nav-container .social-header {
+    padding: 2em 4em 2em 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-container .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 5em;
+    float: right;
+  }
+  .nav-container .social-header img {
+    width: 25px;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2em;
+  }
+  header .logo {
+    font-weight: bold;
+    color: white;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header ul a {
+    color: black;
+    display: block;
+    padding: 0 1em;
   }
   .left,
   .portfolio-left {
